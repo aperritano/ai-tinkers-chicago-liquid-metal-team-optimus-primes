@@ -1,0 +1,32 @@
+{
+  "name": "@311-dispatcher/api",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest",
+    "db:migrate": "node-pg-migrate up",
+    "db:seed": "tsx src/scripts/seed.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "socket.io": "^4.7.3",
+    "pg": "^8.11.3",
+    "bull": "^4.11.4",
+    "redis": "^4.6.10",
+    "zod": "^3.22.4",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/cors": "^2.8.15",
+    "@types/pg": "^8.10.7",
+    "tsx": "^4.1.2",
+    "vitest": "^0.34.6",
+    "node-pg-migrate": "^6.2.2",
+    "typescript": "^5.2.2"
+  }
+}

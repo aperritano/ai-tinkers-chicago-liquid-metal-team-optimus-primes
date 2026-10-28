@@ -1,0 +1,10 @@
+application "todo-app" {
+  
+  // Service for handling TODO API requests
+  service "todo-api" {
+    visibility = "public"
+  }
+
+  // SmartBucket for storing TODO items with vector search capabilities
+  smartbucket "todos-sb" {}
+}
